@@ -11,11 +11,11 @@
 	* 其它部门不能相互访问
 	
 ##拓扑图
-
+![](https://raw.githubusercontent.com/jifaxu/image/master/main.PNG)
 
 ##路由器配置
 
-
+![](https://raw.githubusercontent.com/jifaxu/image/master/router_config.PNG)
 ```
 en
 conf t
@@ -57,12 +57,12 @@ ip route 192.168.9.0 255.255.255.0 20.0.0.3
 ```
 配置结果
 
-
+![](https://raw.githubusercontent.com/jifaxu/image/master/iproute.PNG)
 ##交换机配置
 
 
 ##自反ACL
-自反 ACL 允许最近出站数据包的目的地发出的应答流量回到该出站数据包的源地址。这样您可以更加严格地控制哪些流量能进入您的网络，并提升了扩展访问列表的能力。
+_*自反 ACL*_ 允许最近出站数据包的目的地发出的应答流量回到该出站数据包的源地址。这样您可以更加严格地控制哪些流量能进入您的网络，并提升了扩展_*访问列表*_的能力。
 网络管理员使用自反 ACL 来允许从内部网络发起的会话的 IP 流量，同时拒绝外部网络发起的 IP 流量。此类 ACL 使路由器能动态管理会话流量。路由器检查出站流量，当发现新的连接时，便会在临时 ACL 中添加条目以允许应答流量进入。自反 ACL 仅包含临时条目。当新的 IP 会话开始时（例如，数据包出站），这些条目会自动创建，并在会话结束时自动删除。
 
 ```
@@ -91,11 +91,11 @@ int fa2/0
 
 ##测试结果
 ###业务部
-
+![](https://raw.githubusercontent.com/jifaxu/image/master/yw.PNG)
 ###测试部
-
+![](https://raw.githubusercontent.com/jifaxu/image/master/cs.PNG)
 ###管理
-
+![](https://raw.githubusercontent.com/jifaxu/image/master/gl.PNG)
 ###办公室
-
+![](https://raw.githubusercontent.com/jifaxu/image/master/boss.PNG)
 
