@@ -11,7 +11,7 @@
 	* 其它部门不能相互访问
 	
 ##拓扑图
-![](https://raw.githubusercontent.com/jifaxu/image/master/main.PNG)
+![](../image/%E6%96%B0%E5%BB%BA%E6%96%87%E4%BB%B6%E5%A4%B9/main.PNG)
 
 ##路由器配置
 
